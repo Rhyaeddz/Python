@@ -19,8 +19,3 @@ print("Exponenciação", exponenciacao)
 modulo = 25 % 5 #resto da soma
 print ("Módulo", modulo)
 
-if 500 % 51 == 0:
-    print('boa')
-
-else:
-    print("nao boa")
