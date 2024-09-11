@@ -1,13 +1,13 @@
-"""
-str -> string -> texto
-strings são textos dentro de aspas 
+nome = 'Rafael Francisco'
+altura = 1.68
+peso = 70
+imc = peso / (altura * altura)
 
-"""
-#aspas simples
-print('neymar "junior"',69,7, sep=" "),
-print("neymar 'junior'"),
-print("\"menino\" ney"),
-print(r"errei \'fui mlk\'"),
+linha1 = f'{nome} tem {altura} pesa {peso} quilos e seu IMC é {imc:.2f}'
 
-#just a note to commit
-# "sep=" aparentemente é só entre os números.
+# f = f-strings , f é de formatação.
+
+# print (nome, 'tem', altura, 'pesa', peso,
+#  'quilos e seu IMC é', imc,)
+
+print(linha1)

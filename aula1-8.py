@@ -1,15 +1,26 @@
-nome = "benguers"
-sobrenome = "Da Silva"
-idade = 90
-ano_do_nascimento = 2024 - idade
-maior_de_idade = idade >= 18
-altura_metros = 1.90 
+condicao = True
 
-print("nome:", nome) 
-print("sobrenome:", sobrenome)
-print("idade:", idade, "anos")
-print("Ano de nascimento:", ano_do_nascimento)
-print('É maior de idade?', maior_de_idade)
-print('altura em metros:', altura_metros)
+if condicao:
+    print('Este é o código do if')
+else:
 
-print(type(1.5))
+    print('Este é o Else do primeiro if')
+
+
+a = False
+b = False 
+c = False
+d = True
+
+if a == True:
+    print('a is true'),
+elif b == True:
+    print('B is True'),
+elif c == True:
+    print('C is True'),
+elif d == True:
+    print("D is True"),
+else: 
+    print ('any True opition!')
+
+# Esta aula foi usada para aprender a usar o debugger

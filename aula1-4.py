@@ -1,15 +1,12 @@
-# Tipos de int e float.
-# int -> Número inteiro.
-# O tipo int representa qualquer numero positivo e negativo. int sem sinal é considerado positivo.
-# //print(15, 11, 20, sep=","),
-# //print(2, 2, 2, sep=","),
-# float -> Número com ponto flutuante;
-# float representa qualquer numero positivo ou negativo com ponto flutuante ex: 1.5, 2.34435;
-# float sem sinal é considerado positivo;
-# e ponto é usado para separa as casas decimais de um numero;
-# //print(15.0, 11.0, 1.5, sep=","),
-# //print(15.1932, 1.2, 1.9, sep=","),
-# A função type mostra o tipo que o Python inferiu ao valor.
-print(type("neymar"))
-print(type(69))
-print(type(3.14))
+a = 'Aaaa'
+b = 'B'
+c = 1.1
+
+# 'parametro' é nome= dps do '=' vem o argumento
+
+string = 'a={nome1} b={nome2} c={nome3:.2f} {nome3:.2f}' 
+
+formato = string.format(nome1=a, nome2=b, nome3=c )
+
+
+print(formato)

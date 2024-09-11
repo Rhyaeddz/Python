@@ -1,4 +1,6 @@
+nome = 'Rafael Francisco'
+altura = 1.68
+peso = 70
+imc = peso / (altura * altura)
 
-print(69, 96, sep="-", end=".")
-print(96, 96, sep="-", end="\n")
-print("como faz a barra invertida ????")
+print (nome, 'tem', altura, 'pesa', peso, 'quilos e seu IMC é', imc,)
