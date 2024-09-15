@@ -7,7 +7,7 @@ strings são textos dentro de aspas
 print('neymar "junior"',69,7, sep=" "),
 print("neymar 'junior'"),
 print("\"menino\" ney"),
-print(r"errei \'fui mlk\'"),
+print("errei 'fui mlk'"),
 
 #just a note to commit
 # "sep=" aparentemente é só entre os números.

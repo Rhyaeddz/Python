@@ -1,20 +1,20 @@
 
 
-# numeroStr = input('Digite um número: ')
-# numero = int(numeroStr)
+numeroStr = input('Digite um número: ')
+numero = int(numeroStr)
 
-# def is_prime(numero):
-#     if numero < 2:
-#         return False
-#     for i in range(2, int(numero ** 0.5) + 1):
-#         if numero % i == 0:
-#             return False
-#     return True
+def is_prime(numero):
+    if numero < 2:
+        return False
+    for i in range(2, int(numero ** 0.5) + 1):
+        if numero % i == 0:
+            return False
+    return True
 
-# if is_prime(numero):
-#     print("O número é primo")
-# else:
-#     print("O número não é primo")
+if is_prime(numero):
+    print("O número é primo")
+else:
+    print("O número não é primo")
 
 
 
@@ -54,11 +54,15 @@ numberStr = input('Digite quantas vezes rodar: ')
 number = int(numberStr)
 
 
-frase = 'Gustavo é gay'
+frase = 'Cetabu'
 tamanhoFrase = len(frase)
-frase = 'Gustavo é gay ' * number
+frase = 'Cetabu' * 9
+
 i = 0
 
-while i <= (len(frase) - tamanhoFrase) - 1:
+while True:# i <= (len(frase) - tamanhoFrase) - 1:
     print(frase[0 + i:tamanhoFrase + i])
     i += 1
+
+    if i > len(frase):
+        i = 0

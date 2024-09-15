@@ -5,18 +5,19 @@
 # nameAndFavoriteNumber = 'Beguerjonson', 69
 # print(nameAndFavoriteNumber)
 
-nome = "rhyas"
-idade = 20
-maior_de_idade = idade >= 18
+nome = input('qual o seu nome?')
+idade = input('qual a sua idade?')
 
-print("Nome:", nome)
-print("Idade:", idade)
-# print("É maior?", maior_de_idade)
+intIdade = int(idade)
 
-if idade <0 or idade >120:
-    print("idade invalida, voce tem", idade,)
+maior_de_idade = (intIdade) >= 18
+
+
+if intIdade <0 or intIdade >120:
+    print("idade invalida, voce tem", idade,'anos ?')
 elif maior_de_idade:
     print("Maior de idade,voce tem:", idade, "anos")
 else:
-    print("Menor de idade")
+    print("Menor de idade!")
+
 
