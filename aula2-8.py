@@ -16,9 +16,8 @@ Se nada for digitado em nome ou idade:
 '''
 usuaryName = input('Insira o seu nome: ')
 usuaryAge = input('Insira sua idade:  ')
-nLetrasNome = (len(usuaryName))
-
-
+nomeEspaços = usuaryName.count(' ')
+nLetrasNome = (len(usuaryName) ) - nomeEspaços
 
 if usuaryName and usuaryAge != ' ':
 
@@ -26,14 +25,12 @@ if usuaryName and usuaryAge != ' ':
     print(f'Você tem {usuaryAge} anos.')
     print(f'Seu nome invertido é:',usuaryName[::-1])
 
-    if ' ' in usuaryName:
-        print(f'Seu nome contém espaços.')
+    if nomeEspaços == 0:
+        print(f'Seu nome não tem nenhum espaço e contém {nLetrasNome} letras.')
     else:
-        print(f'Seu nome não contém espaços.')
+        print(f'Seu nome tem {nomeEspaços} espaços e contém {nLetrasNome} letras.')
 
-    print(f'Seu nome tem {nLetrasNome} letras.')
-    print(f'A primeira letra do seu nome é: {usuaryName[0]}')
-    print(f'A ultima letra do seu nome é: {usuaryName[-1]}')
+    print(f'A primeira letra do seu nome é {usuaryName[0]} e a última é {usuaryName[-1]}.')
 
 else:     
     print(f'Desculpe, você deixou os campos vazios.')
